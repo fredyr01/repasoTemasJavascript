@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio con querySelectorAll</title>
+    <style>
+        .azul{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="cabecero" class="azul">Ejemplo DOM con Javascript</h1>
+    <p id="parrafo1" class="azul">Hola, soy un parrafo!</p>
+    <p id="parrafo2" class="azul">Hola, soy el segundo parrafo!</p>
+
+    <script>
+        let elementos = document.querySelectorAll('p.azul');
+        console.log(`No. elementos: ${elementos.length}`);
+        for(let elemento of elementos){
+            console.log(`${elemento.innerHTML}`);
+        }
+    </script>
+</body>
+</html>

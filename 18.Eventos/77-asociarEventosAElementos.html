@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asociar eventos a elementos con Javascript</title>
+</head>
+<body>
+    <h1 id="titulo">Manejo DOM con Javascript</h1>
+    <br>
+    <div id="mostrar">
+
+    </div>
+
+    <script>
+        document.getElementById('titulo').onclick = cambiarTexto;
+        // La función es de tipo callback, se llama una vez se de click
+        function cambiarTexto(){
+            document.getElementById('mostrar').innerHTML = 'Nuevo contenido!';
+        }
+    </script>
+</body>
+</html>
